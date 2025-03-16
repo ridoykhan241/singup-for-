@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Popup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <button class="signup-btn" onclick="openPopup()">Sign Up</button>
+    </div>
+
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2 align="left">Sign Up</h2>
+            <p align="left">It's free and always will be.</p>
+            <form id="signup-form">
+                <table>
+                    <tr>
+                        <td><label for="first-name">First Name:</label></td>
+                        <td><input type="text" id="first-name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="last-name">Last Name:</label></td>
+                        <td><input type="text" id="last-name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Your Email:</label></td>
+                        <td><input type="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="re-email">Re-enter Email:</label></td>
+                        <td><input type="email" id="re-email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">New Password:</label></td>
+                        <td><input type="password" id="password"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <button type="submit" class="accept-btn">Accept</button>
+                        </td>
+                    </tr>
+                </table>
+                <div class="confirmation">
+                    <p>Make it sure that the information is confirmed.</p>
+                </div>
+            </form>
+            <p id="error-message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
